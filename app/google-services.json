@@ -150,6 +150,35 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:3256299836:android:2e18b36cc04fc9bdc3ae39",
+        "android_client_info": {
+          "package_name": "hcmute.musicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "3256299836-d5b3e33gip56ahp7tarbjq7n4mtbuf06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvxt9mY0qQQHPH8o-VrtjbdH4qZs10IVw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "3256299836-d5b3e33gip56ahp7tarbjq7n4mtbuf06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"

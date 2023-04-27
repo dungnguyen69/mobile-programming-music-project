@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homepage"
+    tools:context=".home_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/albumPic1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/albumpic1">
+
+        </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+        <TextView
+            android:id="@+id/albumDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/albumPic1"
+            android:layout_marginVertical="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Với Tiên Tiên, Madihu, Truc Nhan và nhiều hơn nữa"
+            android:textColor="#e5e5e5"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/spotifyIcon"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/albumDesc"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/spotify">
+
+
+        </androidx.constraintlayout.utils.widget.ImageFilterView>
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:backgroundTint="@color/green"
+            />
+        <TextView
+            android:id="@+id/textOfIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/albumDesc"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/spotifyIcon"
+            android:text="Spotify"
+            android:textColor="#e5e5e5"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/likeNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spotifyIcon"
+            android:layout_marginLeft="15dp"
+            android:text="7.028 lượt thích. 3 giờ 12 phút"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/heartIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/likeNumber"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/hearticon" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/downloadBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/likeNumber"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/heartIcon"
+            android:src="@drawable/downloadbutton" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/moreBtn"
+            android:layout_width="20dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/likeNumber"
+            android:layout_marginTop="10dp"
+
+            android:layout_toRightOf="@+id/downloadBtn"
+            android:src="@drawable/morebtn" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imgAddSong"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/likeNumber"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@+id/playBtn"
+            android:src="@drawable/baseline_add_24" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/playBtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/likeNumber"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/playbutton2" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/List0fSong"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#111313"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/gray_strong"
+        app:itemIconTint="@drawable/bottom_nav_selector"
+        app:itemTextColor="@drawable/bottom_nav_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

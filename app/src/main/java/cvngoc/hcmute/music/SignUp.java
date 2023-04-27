@@ -30,6 +30,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 import java.util.regex.Pattern;
 
+
 public class SignUp extends AppCompatActivity {
     private FrameLayout frameLayout;
     private EditText txtUsername;

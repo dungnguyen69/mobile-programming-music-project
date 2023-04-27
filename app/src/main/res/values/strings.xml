@@ -1,6 +1,7 @@
 <resources>
-    android:label="@string/custom_app_dialog"
     <string name="app_name">MusicApp</string>
+    <string name="song_name">Có em bên đời bổng vui</string>
+    <string name="single_name">Chillies</string>
     <string name="sign_in">Sign In</string>
     <string name="sign_up">Sign Up</string>
     <string name="login">Login </string>

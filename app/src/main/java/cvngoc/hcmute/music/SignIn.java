@@ -27,6 +27,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+
 public class SignIn extends AppCompatActivity {
     private TextView txtRegister;
     private EditText txtEmail;
@@ -89,7 +90,7 @@ public class SignIn extends AppCompatActivity {
                                             // Sign in success, update UI with the signed-in user's information
                                             Toast.makeText(getApplicationContext(), "Sign in successfully.",
                                                     Toast.LENGTH_SHORT).show();
-                                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                            Intent intent = new Intent(getApplicationContext(), home_activity.class);
                                             startActivity(intent);
                                             finish();
                                         } else
